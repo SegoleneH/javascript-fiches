@@ -29,7 +29,7 @@
                   
       let number = 25;
       if ( number <= 50) {
-          var obsolete = 'Je suis disponible partout, mais m\'utiliser peut devenir un vrai cauchemar';
+          var obsolete = 'J\'ai une portée globale, donc je suis disponible partout, mais m\'utiliser peut devenir un vrai cauchemar';
       } 
       console.log(obsolete);
   
@@ -69,8 +69,8 @@
 
 //* PORTÉE DE BLOC
 
-      //~ Les variables let déclarées dans un bloc (entre { }) sont visibles uniquement à l'intérieur 
-      //~ de celui-ci : portée de bloc
+    //~ Les variables let déclarées dans un bloc (entre { }) sont visibles uniquement à l'intérieur 
+    //~ de celui-ci : portée de bloc
 
       // Exemple :
 
