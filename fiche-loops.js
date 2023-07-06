@@ -49,7 +49,7 @@ for (let i in users){
     }
   );
 
-//! À COMPLÉTER
+//! À COMPLÉTER - https://www.pierre-giraud.com/javascript-apprendre-coder-cours/introduction-asynchrone/
 //! mode synchrone:  je fais 1 truc, quand j'ai fini je passe à un autre truc
 //! mode asynchrone: je fais 1 truc, je vérifie s'il n'y a pas d'autre truc à faire, puis je passe à un autre truc
   //^ On peut prendre l’exemple d’un restaurant. Plusieurs clients sont attablés. Ils peuvent passer commande en même

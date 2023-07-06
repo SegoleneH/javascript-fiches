@@ -15,25 +15,25 @@
   
   //______________________________________________________________________________________________________
   
-  //~ Une variable déclarée avec var dans un bloc fonctionne même si on l'utilise en dehors du bloc.
+  //~ Une variable déclarée avec var dans un bloc a une portée globale
       
-      //! ==> VAR N'EST PLUS UTILISÉ EN JS MODERNE
+      //! ==> VAR N'EST PLUS UTILISÉ SYSTÉMATIQUEMENT EN JS MODERNE
         //^ Pourquoi ? 
           //^ 1) Quand on utilise var, cela permet créer plusieurs var du même nom, 
           //^ qui peuvent entrer en conflit les unes avec les autres. Les var peuvent ré-écrire d'autres
-          //^ var placées plus haut dans le code
+          //^ var placées plus haut dans le code, en les écrasant totalement ( let nous permet de modifier une variable sans l'écraser)
           //^ 2)  Avec une portée aussi grande, une var peut entrer en conflit non seulement avec d'autres var
           //^ dans le même fichier, mais aussi avec celles qui sont dans d'autres fichiers .
                   
-          //! En bref var = source de bugs infinie 
+          //! En bref var = source de bugs infinie si pas utilisé correctement
                   
       let number = 25;
       if ( number <= 50) {
           var obsolete = 'J\'ai une portée globale, donc je suis disponible partout, mais m\'utiliser peut devenir un vrai cauchemar';
       } 
       console.log(obsolete);
-  
-
+  //! Si on veut une variable avec une portée globale et qu'on est sûrs de ne pas avoir de souci avec la portée, 
+  //! , on peut alors utiliser var
 //______________________________________________________________________________________________________
 
 //* PORTÉE LOCALE 
